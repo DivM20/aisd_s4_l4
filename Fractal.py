@@ -139,8 +139,8 @@ def HuffmanTree(node, left=True, binString=''):
 
 
 start = time.time()
-im = Image.open('lena.bmp').convert('L')
-im.save("lena_grayscale.bmp")
+im = Image.open('pepper.bmp').convert('L')
+im.save("pepper_grayscale.bmp")
 tree = Qtree(im, quality=100)
 symbols = np.unique(tree.data[3])
 
