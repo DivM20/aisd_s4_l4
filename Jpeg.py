@@ -36,7 +36,7 @@ zigzag = numpy.array(
 
 
 def main():
-    src = "lena_grayscale.bmp"
+    src = "pepper_grayscale.bmp"
     quality = 100
     outJPEG = "out" + str(quality) + ".jpg"
 
