@@ -5,8 +5,6 @@ padding = 0
 scale = 1
 from PIL import Image, ImageDraw
 
-MIN_BOX = 10 ** 9
-
 
 def color_avg(hist):
     total = sum(hist)
@@ -26,7 +24,6 @@ def hist_to_clor(hist):
 class QtreeNode(object):
 
     def __init__(self, img, box, depth):
-        global MIN_BOX
         self.box = box
         self.depth = depth
         self.children = None
